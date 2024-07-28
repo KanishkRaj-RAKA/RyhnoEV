@@ -1,0 +1,116 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    /* width: 80%; */
+}
+.product img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.product-details {
+    flex: 1;
+    text-align: left;
+}
+.product h2 {
+    color: #007BFF;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.color-options{
+    display: flex;
+    flex-wrap: wrap;
+}
+.color-options div {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.color1{
+    background-color: #464646;
+}
+.color2{
+    background-color: #689EC3;
+}
+.color3{
+    background-color: #AE8246;
+}
+.color4{
+    background-color: #D84B4F;
+}
+.product-details button{
+    width: inherit;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+.bookNow a{
+   text-decoration: none;
+   color: #FFf;
+   font-size: 22px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.productcard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.card h2 {
+    text-align: center;
+    color: #333;
+}
+.card .specs {
+    display: flex;
+    flex-direction: column;
+}
+.card .specs div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.card .specs div:last-child {
+    border-bottom: none;
+}
+.card .specs .label {
+    font-weight: bold;
+    color: #555;
+}
+.card .specs .value {
+    color: #777;
+}
+@media (max-width: 768px) {
+    .product{
+        flex-direction: column;
+    }
+    .product img{
+        width: 400px;
+    }
+}
